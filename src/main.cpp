@@ -28,8 +28,6 @@ void setup() {
     lcd.displayMessage("How are you?", 1);
     delay(8000);
 
-    lcd.flashBacklight(4);
-    lcd.scrollDemo();
 }
 
 void loop() {

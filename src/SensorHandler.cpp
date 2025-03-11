@@ -8,7 +8,7 @@ void handleSensorReadings(int currentMenuItem, LCDClass &lcd, TemperatureHumidit
             if (tempHumiditySensor.read(temperature, humidity)) {
                 lcd.clear();
                 lcd.setCursor(0, 0);
-                lcd.print("Temp: ");
+                lcd.print("Temp:");
                 lcd.print(temperature);
                 lcd.print(" C");
             } else {
@@ -25,7 +25,7 @@ void handleSensorReadings(int currentMenuItem, LCDClass &lcd, TemperatureHumidit
             if (tempHumiditySensor.read(temperature, humidity)) {
                 lcd.clear();
                 lcd.setCursor(0, 0);
-                lcd.print("Humidity: ");
+                lcd.print("Humidity:");
                 lcd.print(humidity);
                 lcd.print(" %");
             } else {
@@ -42,7 +42,7 @@ void handleSensorReadings(int currentMenuItem, LCDClass &lcd, TemperatureHumidit
             if (moisture >= 0) {
                 lcd.clear();
                 lcd.setCursor(0, 0);
-                lcd.print("Moisture: ");
+                lcd.print("Moisture:");
                 lcd.print(moisture);
             } else {
                 lcd.clear();
@@ -58,7 +58,7 @@ void handleSensorReadings(int currentMenuItem, LCDClass &lcd, TemperatureHumidit
             if (fluidLevel >= 0) {
                 lcd.clear();
                 lcd.setCursor(0, 0);
-                lcd.print("Fluid Level: ");
+                lcd.print("Fluid Level:");
                 lcd.print(fluidLevel);
             } else {
                 lcd.clear();

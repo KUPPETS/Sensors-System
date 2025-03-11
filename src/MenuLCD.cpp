@@ -18,9 +18,9 @@ void handleNavigation(JoyStick &joystick) {
     joystick.readValues();
     int yVal = joystick.getYValue();
 
-    if (yVal > 600) { // Joystick moved up
+    if (yVal > 700) { // Joystick moved up
         currentMenuItem = (currentMenuItem - 1 + menuSize) % menuSize;
-    } else if (yVal < 400) { // Joystick moved down
+    } else if (yVal < 324) { // Joystick moved down
         currentMenuItem = (currentMenuItem + 1) % menuSize;
     }
 
